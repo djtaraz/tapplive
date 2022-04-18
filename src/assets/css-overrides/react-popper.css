@@ -1,0 +1,11 @@
+#popper-arrow:before {
+    @apply border-gray-light;
+    background: #fff !important;
+}
+
+#popper-arrow.bottom:before {
+    @apply border-t border-l;
+}
+#popper-arrow.top:before {
+    @apply border-r border-b;
+}

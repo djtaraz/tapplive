@@ -1,0 +1,13 @@
+.tap-select__menu-list::-webkit-scrollbar-track {
+    background-color: transparent !important;
+}
+
+.tap-select__menu-list::-webkit-scrollbar {
+    width: 6px !important;
+    background-color: transparent !important;
+}
+
+.tap-select__menu-list::-webkit-scrollbar-thumb {
+    background-color: #5243c2 !important;
+    border-radius: 5px !important;
+}

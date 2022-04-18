@@ -1,0 +1,102 @@
+{
+    "name": "tapplive-web",
+    "version": "1.4.2",
+    "private": true,
+    "dependencies": {
+        "@craco/craco": "^6.1.1",
+        "@popperjs/core": "^2.9.2",
+        "@reduxjs/toolkit": "^1.5.1",
+        "@tailwindcss/line-clamp": "^0.2.0",
+        "@testing-library/jest-dom": "^5.11.10",
+        "@testing-library/react": "^11.2.6",
+        "@testing-library/user-event": "^12.1.10",
+        "autoprefixer": "9",
+        "axios": "^0.21.1",
+        "body-scroll-lock": "^3.1.5",
+        "classnames": "^2.3.1",
+        "date-fns": "^2.19.0",
+        "formik": "^2.2.6",
+        "i18next": "^20.1.0",
+        "i18next-browser-languagedetector": "^6.1.0",
+        "i18next-http-backend": "^1.2.1",
+        "libphonenumber-js": "^1.9.16",
+        "linkifyjs": "^3.0.0-beta.3",
+        "nanoid": "^3.1.25",
+        "normalizr": "^3.6.1",
+        "postcss": "7",
+        "prettier": "^2.2.1",
+        "prop-types": "^15.7.2",
+        "qrcode.react": "^1.0.1",
+        "react": "^17.0.2",
+        "react-app-polyfill": "^2.0.0",
+        "react-custom-scrollbars": "^4.2.1",
+        "react-datepicker": "^3.7.0",
+        "react-dom": "^17.0.2",
+        "react-i18next": "^11.8.12",
+        "react-lottie": "^1.2.3",
+        "react-player": "^2.9.0",
+        "react-popper": "^2.2.5",
+        "react-query": "^3.13.4",
+        "react-redux": "^7.2.3",
+        "react-responsive": "^8.2.0",
+        "react-scripts": "^4.0.3",
+        "react-select": "^4.3.0",
+        "react-select-async-paginate": "^0.5.3",
+        "react-toastify": "^7.0.3",
+        "redux-devtools": "^3.7.0",
+        "socket.io-client": "2",
+        "tailwindcss": "npm:@tailwindcss/postcss7-compat",
+        "wouter": "^2.7.4",
+        "yup": "^0.32.9"
+    },
+    "scripts": {
+        "start": "craco start",
+        "build": "craco build",
+        "test": "craco test",
+        "eject": "react-scripts eject",
+        "prepare": "husky install",
+        "pre-commit": "lint-staged"
+    },
+    "eslintConfig": {
+        "extends": [
+            "react-app",
+            "react-app/jest"
+        ],
+        "rules": {
+            "jsx-a11y/anchor-is-valid": "off"
+        }
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    },
+    "prettier": {
+        "printWidth": 120,
+        "trailingComma": "all",
+        "tabWidth": 4,
+        "semi": false,
+        "singleQuote": true,
+        "bracketSpacing": true,
+        "arrowParens": "always",
+        "jsxBracketSameLine": true
+    },
+    "devDependencies": {
+        "husky": "^6.0.0",
+        "lint-staged": "^10.5.4",
+        "pretty-quick": "^3.1.0"
+    },
+    "lint-staged": {
+        "**/*.js": [
+            "./node_modules/.bin/eslint src --max-warnings=0",
+            "pretty-quick --staged"
+        ]
+    }
+}

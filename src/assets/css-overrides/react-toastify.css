@@ -1,0 +1,23 @@
+@import 'react-toastify/dist/ReactToastify.min.css';
+
+.Toastify__toast {
+    @apply py-6 px-8 relative overflow-visible top-0 whitespace-nowrap;
+    border-radius: 10px;
+    box-shadow: none;
+}
+.Toastify__toast-container {
+    @apply p-2 w-auto;
+}
+.Toastify__toast-container--top-center {
+    @apply top-20;
+}
+.Toastify__toast-body {
+    @apply p-0 text-s tracking-0.01 font-bold;
+}
+.Toastify__toast--error {
+    @apply bg-pink-alert;
+}
+
+.Toastify__toast--dark {
+    @apply bg-black-theme;
+}
